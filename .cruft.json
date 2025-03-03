@@ -1,0 +1,34 @@
+{
+  "template": "https://github.com/JoseRZapata/data-science-project-template",
+  "commit": "e3945e0d0eabddd05ecce6cc7a081ab0b1bfda21",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "rag-project",
+      "repo_name": "rag-project",
+      "github_username": "Rit-ctrl",
+      "author_name": "Rithic Kumar",
+      "author_email": "rithic40@gmail.com",
+      "description": "rag project in progress",
+      "compatible_python_versions": "3.12",
+      "mkdocs": true,
+      "codecov": true,
+      "license": "MIT License",
+      "_copy_without_render": [
+        ".code_quality/*",
+        ".vscode/*",
+        "config/*",
+        "data/*",
+        "src/*",
+        "tests/*",
+        ".editorconfig",
+        ".pre-commit-config.yaml",
+        "codecov.yaml",
+        "docs/*"
+      ],
+      "_template": "https://github.com/JoseRZapata/data-science-project-template",
+      "_commit": "e3945e0d0eabddd05ecce6cc7a081ab0b1bfda21"
+    }
+  },
+  "directory": null
+}
