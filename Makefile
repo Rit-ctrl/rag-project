@@ -1,4 +1,5 @@
 .PHONY: tests help init_env init_git pre-commit_update docs_view docs_test test check
+SHELL := /bin/bash
 
 ####----Basic configurations----####
 
@@ -8,7 +9,11 @@ install: ## Install libs with poetry and pre-commit
 	@echo "🚀 Installing pre-commit..."
 	uv run pre-commit install
 	@echo "💻 Activate virtual environment..."
-	@source .venv/bin/activate
+	@source .venv/bin/activate && uv add -r requirements.txt
+
+activate:
+	@echo "Activating environment"
+	@. .venv/bin/activate
 
 init_git: ## Initialize git repository
 	@echo "🚀 Initializing local git repository..."
